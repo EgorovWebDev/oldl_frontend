@@ -1,0 +1,244 @@
+.author
+	&-header
+		height: 280px
+		background-image: url(../img/author/authorHeader.png)
+		width: 100%
+		&>header
+			background-color: inherit
+			border-radius: unset
+			box-shadow: unset
+			position: static
+	&-profile
+		width: 25vw
+		background-color: #fff
+		border-radius: $border
+		margin-left: 5vw
+		margin-top: -64px
+		color: #000
+	&-grid
+		width: 100%
+		display: flex
+	&-content
+		width: 60vw
+		height: 600px	
+		margin-left: 80px
+		margin-top: 35px
+.tabs
+	display: flex
+	justify-content: space-between
+	font-family: $mons
+	font-size: 18px
+	color: #fff
+	align-items: center
+	&-nav
+		&__active
+			background-color: #fff
+			color: $base-color
+			border-radius: $border
+			padding: 10px
+		&__dissable
+			color: rgba(152, 152, 152, 1)
+.tab
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&-item
+		position: relative
+		width: 46%
+		height: 300px
+		background-color: $gray-color
+		margin-top: 35px
+		border-radius: $border
+		background: url("../img/author/Postimg.png") no-repeat center
+		&__button
+			position: absolute
+			top: 24px
+			left: 24px
+		&__date
+			position: absolute
+			top: 26px
+			right: 24px
+			color: #f4f4f4
+			font-family:	$mons
+			font-size: 16px
+	&-info
+		text-align: left
+		position: absolute
+		bottom: 24px
+		padding-left: 24px
+		&__title
+			font-size: 24px
+			font-family: $mons
+			line-height: 36px
+		&__hidden
+			display: none
+			align-items: center
+			font-family: $mons
+			font-size: 16px
+			width: 100%
+			position: relative
+			margin-top: 24px
+		&__time
+			margin-left: 36px
+			position: relative
+			&.dot::after
+				left: -18px
+				right: 0
+		&__likes
+			display: flex
+			align-items: center
+			color: #f4f4f4
+			position: absolute
+			right: 24px
+			&>img
+				width: 20px
+				height: 20px
+			&>span
+				margin-left: 10px
+.profile
+	&-img
+		text-align: center
+		margin-top: 32px
+		position: relative
+		&__img
+			width: 140px
+			height: 140px
+			margin: 0 auto
+			&>img
+				widtht: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 50%
+		&__edit
+			width: 29px
+			height: 29px
+			position: absolute
+			bottom: -7px	
+			right: 38%
+			&:hover
+				cursor: pointer
+			&>img
+				width: 100%
+				height: 100%
+	&-name
+		text-align: center
+		font-family: $mons
+		font-size: 24px	
+		font-weight: 700
+		margin-top: 11px
+	&-stats
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		padding-left: 32px
+		margin-top: 45px
+		font-family: $mons
+		font-size: 18px
+		&__raiting, &__subscribers, &__grade
+			width: 50%
+			margin-top: 19px
+		&__count
+			margin-top: 19px
+			width: 50%
+			font-size: 20px
+			font-weight: 600
+			&_green
+				color: #27AE60
+		&.line::after
+				top: -15px
+				bottom: unset
+				background: rgb(160,162,162)
+				background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+	&-socials
+		position: relative
+		margin-top: 60px
+		padding-left: 32px
+		&__title
+			color: #989898
+			text-transform: uppercase
+			font-family: $mons
+		&__list
+			margin-top: 16px
+			display: flex
+			&-item
+				margin-left: 24px
+				width: 40px
+				height: 40px
+				background-color: #161619
+				border-radius: 50%
+				&>a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 100%
+					height: 100%
+					text-align: center
+					&>img
+						width: 24px	
+						height: 20px
+						text-align: center
+				&:first-child
+					margin-left: 0
+		&.line::after
+				top: -28px
+				bottom: unset
+				background: rgb(160,162,162)
+				background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+	&-about
+		position: relative
+		font-family: $mons
+		padding: 0 32px
+		margin-top: 64px
+		&__title
+			color: #989898
+			text-transform: uppercase
+		&__descr
+			margin-top: 16px
+			font-weight: 400	
+		&__button
+			&_edit, &_become
+				width: 100%
+				height: 39px
+				font-size: 18px
+				border-radius: $border
+			&_edit
+				margin-top: 32px
+				color: #fff
+				background-color: $base-color
+				font-family: $mons
+			&_become
+				margin-top: 22px
+				background-color: #fff
+				color: $base-color
+				border: 1px solid $base-color
+				font-weight: 600
+		&.line::after
+			top: -28px
+			bottom: unset
+			background: rgb(160,162,162)
+			background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+	&-panel
+		position: relative
+		margin-top: 55px	
+		padding: 0 32px
+		font-family: $mons
+		&__title
+			color: #989898
+			text-transform: uppercase
+		&__descr
+			margin-top: 16px
+		&__button
+			width: 100%
+			height: 39px
+			margin: 22px 0 32px 0
+			font-family: $mons
+			border-radius: $border
+			background-color: #2F80ED
+			color: #fff
+			font-size: 18px
+		&.line::after
+			top: -28px
+			bottom: unset
+			background: rgb(160,162,162)
+			background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)

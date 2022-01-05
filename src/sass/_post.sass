@@ -1,0 +1,311 @@
+.left
+	&-bar
+		width: 14vw
+		top: 40vh
+		font-family: $mons
+		line-height: 28px
+		height: 100%
+	&-author
+		position: relative
+		&__name
+			font-size: 18px
+		&__descr
+			margin-top: 12px
+			color: $gray-color
+			font-size: 16px
+		&__subscribe
+			margin-top: 20px
+			width: 137px
+			height: 32px
+			background-color: #fff
+			font-family: $mons
+			border-radius: 10px
+		&.line::after
+			width: 90%
+			left: 0
+			bottom: -32px
+	&-recom
+		margin-top: 68px
+		position: relative
+		&__item
+			margin-top: 24px
+			&_descr
+				font-size: 16px
+				line-height: 100%
+				color: $gray-color
+			&_title
+				font-size: 18px
+		&.line::after
+			width: 90%
+			left: 0
+			bottom: -32px
+	&-stats
+		margin-top: 60px
+		display: flex
+		color: $gray-color
+		justify-content: space-between
+		&__likes, &__comments
+			display: flex
+			align-items: center
+			&-count
+				margin-left: 9px
+			&>img
+				width: 23px
+				height: 23px
+		&__favorite
+			&>img
+				width: 23px
+				height: 23px
+.right
+	&-bar
+		width: 14vw
+		height: 100%
+		top: 40vh
+	&-recom
+		width: 100%
+		border: 1px solid $gray-color
+		border-radius: $border
+		padding: 0 24px 24px 24px
+		font-family: $mons
+		&__title
+			position: relative
+			font-size: 20px
+			margin: 16px 0 38px 0
+			&.line::after
+				left: 0
+				width: 100%
+				background: rgb(160,162,162)
+				background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+		&__item
+			position: relative
+			margin-top: 32px
+			&_link
+				color: #fff
+				font-size: 16px
+			&.line::after
+				left: 0
+				width: 100%
+				background: rgb(160,162,162)
+				background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+	&-store
+		margin-top: 35px
+		width: 100%
+		height: 100%
+		&>img
+			width: 100%
+			height: 100%
+.post
+	display: flex
+	justify-content: space-around
+	width: 85vw
+	margin: 210px auto 0 auto
+.content
+	width: 50vw
+	&-title
+		font-size: 32px
+		line-height: 48px
+		font-weight: 700
+		font-family: $georgia
+		letter-spacing: 2px
+		text-transform: uppercase
+	&-author
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 24px
+		&__info
+			display: flex
+			align-items: center
+		&__date
+			display: flex
+			color: $gray-color
+			font-family: $mons
+		&__name, &__year, &__time
+			margin-left: 16px
+		&__time
+			position: relative
+			&.dot::after
+				top: 4px
+				right: -21px
+		&__reading
+			margin-left: 36px
+		&__buttons
+			&>button
+				font-size: 16px
+				min-width: 102px
+	&-socials
+		margin-top: 24px
+		display: flex
+		justify-content: space-between
+		&__button
+			cursor: pointer
+			width: 120px
+			height: 40px
+			border: 1px solid $gray-color
+			border-radius: $border
+			background-color: #1D1C21
+	&-img
+		width: 100%
+		max-height: 430px
+		margin-top: 24px
+		text-align: center
+		&>img
+			width: 100%
+			height: 100%
+			object-fit: contain
+			border-radius: $border	
+		&__descr
+			margin-top: 12px
+			font-family: $mons
+			color: $gray-color
+			font-size: 24px
+	&-text
+		margin-top: 40px
+		font-family: $georgia
+		color: #f4f4f4
+		&__title
+			font-size: 24px
+			line-height: 28px
+			letter-spacing: 1px
+			font-weight: 700
+		&__subtitle
+			margin-top: 12px
+			font-size: 18px
+			line-height: 28px
+			letter-spacing: 1px
+			font-weight: 700
+		&__text
+			margin-top: 12px
+			font-size: 18px
+			line-height: 28px
+			color: #f4f4f4
+	&-share
+		font-size: 24px
+		line-height: 28px
+		margin-bottom: 40px
+	&-interesting
+		margin-top: 64px
+		font-family: $georgia
+		&__title
+			font-size: 24px
+			line-height: 28px
+			font-weight: 700
+		&__item
+			margin-top: 40px
+			display: flex
+			align-items: center
+	&-comment
+		margin-top: 64px
+		&__title
+			font-size: 24px
+			line-height: 28px
+			font-weight: 700
+			font-family: $georgia
+.comment
+	margin-top: 50px
+	&:first-child
+		margin-top: 0
+	&-container
+		background-color: #17161B
+		width: 100%
+		border: 1px solid $gray-color
+		border-radius: $border
+		margin-top: 40px
+		padding: 24px
+	&-info
+		display: flex
+		align-items: center
+		font-family: $mons
+		&__author
+			font-size: 17px
+			font-weight: 500
+			color:#F2994A
+		&__block
+			font-size: 17px
+			line-height: 27px
+			width: 80%
+			max-width: 80%
+			margin-left: 31px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: -15px
+				width: 2px
+				height: 100%
+				background-color: #f1f1f1
+			&_answer
+				color: $gray-color
+				margin-left: 16px
+				position: relative
+				width: 100%
+				height: 54px
+				&::after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: -15px
+					width: 2px
+					height: 100%
+					background-color: #56CCF2
+	&-form
+		display: flex
+		flex-direction: column
+		&__textarea
+			resize: none
+			background-color: #17161B
+			margin-top: 36px
+			border-radius: $border
+			border: 1px solid $gray-color
+			outline: none
+			font-size: 17px
+			font-family: $mons
+			padding: 16px
+			color: #fff
+		&__button
+			margin-top: 24px
+			background-color: inherit
+			background-color: #737373
+			height: 48px
+			border-radius: $border
+			font-size: 18px
+			font-family: $mons
+			font-weight: 700
+	&-like
+		margin-top: 5px
+		display: flex
+		align-items: center
+		justify-content: end
+		&__count
+			font-size: 18px
+			color: $gray-color
+			font-family: $mons
+			margin-left: 11px
+			&_liked
+				color: #fff
+		&__img
+			width: 20px
+			height: 20px
+.interesting
+	&-img
+		width: 100px
+		height: 100px
+		&>img
+			width: 100%
+			height: 100%
+			border-radius: $border
+	&-info
+		font-family: $georgia
+		margin-left: 24px
+		width: 80%
+		&__descr
+			margin-top: 8px
+			font-size: 17px
+			line-height: 28px
+			color: $gray-color
+			font-weight: 400
+			word-wrap: break-word
+		&__title
+			font-size: 18px
+			line-height: 28px

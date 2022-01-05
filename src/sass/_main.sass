@@ -1,0 +1,190 @@
+.main
+	margin-top: 80px
+	width: 100%
+	color: #fff
+	&-container
+		max-width: 85%
+		margin: 0 auto
+	.post
+		position: relative
+		height: 420px
+		&-img
+			border-radius: $border
+			object-fit: cover
+			width: 100%
+			height: 100%
+		&-info
+			position: absolute
+			bottom: 25px
+			left: 25px
+			font-family: $mons
+			&__title
+				width: 60%
+				font-weight: 700
+				margin-top: 24px	
+				font-size: 32px
+			&__author
+				font-size: 20px
+				margin-top: 23px
+				display: flex
+				justify-content: space-between
+			&__container
+				display: flex
+				align-items: center
+		&-like , &-views , &-comments
+			margin-top: 8px
+			display: flex
+			align-items: center
+			text-align: end
+			margin-right: 20px
+			&__img
+				width: 26px
+				height: 26px
+				margin-right: 8px
+			&__count
+				font-family: $mons
+				font-size: 16px
+				margin-left: 8px
+		&-action
+			display: flex
+			align-items: center
+	&-button
+		&__container
+			width: 100%
+			text-align: center
+			margin-top: 80px
+.info
+	&-author
+		&__name
+			font-size: 20px
+			position: relative
+			margin-right: 48px
+			&::after
+				position: absolute
+				right: -23px
+				top: -5px
+				content: ''
+				width: 3px
+				height: 30px
+				background-color: #fff
+		&__date
+			font-size: 20px
+			margin-right: 22px
+		&__time
+			font-size: 20px
+			margin-right: 53px
+			position: relative
+		&__reading
+			font-size: 20px
+.grid
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 75%
+	&-item
+		margin-top: 13px
+		width: 48%
+		position: relative
+		&__img
+			width: 100%
+			height: 300px
+			&>img
+				border-top-left-radius: 10px
+				border-top-right-radius: 10px
+				width: 100%
+				height: 100%
+		&__button
+			position: absolute
+			top: 24px
+			left: 24px
+	&-info
+		border: 1px solid $gray-color
+		border-radius: 0 0 $border $border
+		border-top: none
+		padding: 24px
+		&__title
+			font-family: $mons
+			font-size: 24px
+		&__desc
+			margin-top: 16px
+			color: $gray-color
+			font-family: $georgia
+			font-size: 18px
+		&__author
+			display: flex
+			align-items: center
+			margin-top: 24px
+			font-size: 16px
+			font-family: $mons
+	&-author
+		margin-left: 16px
+		&__img
+			width: 48px
+			height: 48px
+			object-fit: cover
+			&>img
+				width: 100%
+				height: 100%
+				border-radius: 50%
+		&__date
+			display: flex
+			margin-top: 5px
+			color: $gray-color
+			&_year
+				margin-right: 16px
+			&_time
+				margin-right: 36px
+				position: relative
+				&.dot::after
+					right: -24px
+					top: 4px
+					background-color: $gray-color
+	&-container
+		display: flex
+		justify-content: space-between
+	&-sidebar
+		display: flex
+		flex-direction: column
+		width: 23%
+		margin-top: 13px
+.sidebar
+	&-img
+		margin-top: 40px
+		&>img
+			width: 100%
+			height: 100%
+			border-radius: $border
+			object-fit: cover
+	&-recom
+		text-align: center
+		width: 100%
+		margin: 0 auto
+		border: 1px solid $gray-color
+		border-radius: $border
+		&__title
+			position: relative
+			margin-top: 24px
+			font-size: 20px
+			font-family: $mons
+			&.line
+				&::after
+					width: 65%
+					left: 19%
+		&__lists
+			display: flex
+			flex-direction: column
+			padding-bottom: 24px
+		&__item
+			display: flex
+			align-items: center
+			text-align: left
+			width: 95%
+			margin: 33px auto 0 auto
+			position: relative
+			&:last-child
+				&.line::after
+					display: none
+			&_title
+				font-family: $mons
+				line-height: 27px
+				color: $gray-color	
