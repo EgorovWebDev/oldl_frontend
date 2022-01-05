@@ -1590,11 +1590,14 @@ html {
           align-items: center;
 }
 
+.tabs-nav {
+  padding: 10px;
+}
+
 .tabs-nav__active {
   background-color: #fff;
   color: #16151A;
   border-radius: 15px;
-  padding: 10px;
 }
 
 .tabs-nav__dissable {
@@ -1603,14 +1606,18 @@ html {
 
 .tab {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.tab-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tab-item {

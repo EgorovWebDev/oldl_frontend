@@ -18,3 +18,11 @@ $(function() {
 			});
 	});
 });
+
+// Скрытие и показ вкладок в кабинета автора
+$(function() {
+	$(".tabs .tabs-nav").click(function() {
+		$(".tabs .tabs-nav").removeClass("tabs-nav__active").eq($(this).index()).addClass("tabs-nav__active");
+		$(".tab").removeClass("tab-active").hide().eq($(this).index()).fadeIn().css('display','flex');
+	}).eq(0);
+});

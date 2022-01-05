@@ -31,18 +31,20 @@
 	color: #fff
 	align-items: center
 	&-nav
+		padding: 10px
 		&__active
 			background-color: #fff
 			color: $base-color
 			border-radius: $border
-			padding: 10px
 		&__dissable
 			color: rgba(152, 152, 152, 1)
 .tab
 	width: 100%
-	display: flex
+	display: none
 	flex-wrap: wrap
 	justify-content: space-between
+	&-active
+		display: flex
 	&-item
 		position: relative
 		width: 46%
