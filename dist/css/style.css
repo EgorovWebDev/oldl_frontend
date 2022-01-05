@@ -685,16 +685,23 @@ html {
   width: 95%;
   margin: 33px auto 0 auto;
   position: relative;
+  color: #A0A2A2;
+  top: 0;
 }
 
 .sidebar-recom__item:last-child.line::after {
   display: none;
 }
 
+.sidebar-recom__item:hover {
+  cursor: pointer;
+  color: #fff;
+  top: -1px;
+}
+
 .sidebar-recom__item_title {
   font-family: "Montserrat";
   line-height: 27px;
-  color: #A0A2A2;
 }
 
 .block-container {
