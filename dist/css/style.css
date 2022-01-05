@@ -533,10 +533,36 @@ html {
   height: 100%;
 }
 
-.grid-item__button {
+.grid-item__action {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 0;
+  padding: 24px 24px 0 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid-item__views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-item__views-count {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #A0A2A2;
+}
+
+.grid-item__views-img {
+  margin-right: 8px;
 }
 
 .grid-info {
@@ -572,6 +598,27 @@ html {
 
 .grid-author {
   margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.grid-author__likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A0A2A2;
+}
+
+.grid-author__likes-img {
+  margin-right: 10px;
 }
 
 .grid-author__img {
