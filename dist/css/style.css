@@ -1701,6 +1701,26 @@ html {
   margin-left: 10px;
 }
 
+.tab-favorite {
+  position: absolute;
+  top: -13px;
+  right: -9px;
+}
+
+.tab-bookmark {
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  z-index: 99;
+  width: 35px;
+  height: 35px;
+}
+
+.tab-bookmark > img {
+  width: 100%;
+  height: 100%;
+}
+
 .profile-img {
   text-align: center;
   margin-top: 32px;
