@@ -211,6 +211,27 @@ html {
   border: 1px solid #FCDF00;
 }
 
+.button-comment {
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #A0A2A2;
+  border: 1px solid transparent;
+}
+
+.button-comment:hover {
+  border: 1px solid #A0A2A2;
+}
+
+.button-comment__active {
+  border: 1px solid #A0A2A2;
+}
+
+.button-comment:first-child {
+  margin-right: 25px;
+}
+
 .dot::after {
   position: absolute;
   right: -30px;
@@ -1591,7 +1612,14 @@ html {
 }
 
 .tabs-nav {
+  border: 1px solid transparent;
   padding: 10px;
+}
+
+.tabs-nav:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 15px;
 }
 
 .tabs-nav__active {
@@ -1628,6 +1656,10 @@ html {
   margin-top: 35px;
   border-radius: 15px;
   background: url("../img/author/Postimg.png") no-repeat center;
+}
+
+.tab-item:hover {
+  cursor: pointer;
 }
 
 .tab-item__button {
@@ -1950,6 +1982,23 @@ html {
   background: -webkit-gradient(linear, left top, right top, from(#a0a2a2), to(rgba(160, 162, 162, 0)));
   background: -o-linear-gradient(left, #a0a2a2 0%, rgba(160, 162, 162, 0) 100%);
   background: linear-gradient(90deg, #a0a2a2 0%, rgba(160, 162, 162, 0) 100%);
+}
+
+.tab .comment-controls {
+  margin-top: 30px;
+}
+
+.tab .comment-container .comment {
+  margin-top: 24px;
+}
+
+.tab .comment-title {
+  font-size: 24px;
+  font-family: "Montserrat";
+}
+
+.tab .comments-liked {
+  display: none;
 }
 
 a {

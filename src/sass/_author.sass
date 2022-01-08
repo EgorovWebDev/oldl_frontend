@@ -31,7 +31,12 @@
 	color: #fff
 	align-items: center
 	&-nav
+		border: 1px solid transparent
 		padding: 10px
+		&:hover
+			cursor: pointer
+			border: 1px solid #fff
+			border-radius: $border
 		&__active
 			background-color: #fff
 			color: $base-color
@@ -53,6 +58,8 @@
 		margin-top: 35px
 		border-radius: $border
 		background: url("../img/author/Postimg.png") no-repeat center
+		&:hover
+			cursor: pointer
 		&__button
 			position: absolute
 			top: 24px
@@ -258,3 +265,16 @@
 			bottom: unset
 			background: rgb(160,162,162)
 			background: linear-gradient(90deg, rgba(160,162,162,1) 0%, rgba(160,162,162,0) 100%)
+.tab
+	.comment
+		&-controls
+			margin-top: 30px
+		&-container
+			& .comment
+				margin-top: 24px
+		&-title
+			font-size: 24px
+			font-family: $mons
+	.comments
+		&-liked
+			display: none		

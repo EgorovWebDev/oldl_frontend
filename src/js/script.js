@@ -26,3 +26,19 @@ $(function() {
 		$(".tab").removeClass("tab-active").hide().eq($(this).index()).fadeIn().css('display','flex');
 	}).eq(0);
 });
+
+// Скрытие и показ лайкнутых и последних комментариев
+$(function() {
+	$("#commentButtonLatest").click(function () {
+		$("#commentButtonLiked").removeClass("button-comment__active");
+		$("#commentButtonLatest").addClass("button-comment__active");
+		$("#likedCommentsList").hide();
+		$("#latestCommentsList").fadeIn();
+	});
+	$("#commentButtonLiked").click(function () {
+		$("#commentButtonLatest").removeClass("button-comment__active");
+		$("#commentButtonLiked").addClass("button-comment__active");
+		$("#latestCommentsList").hide();
+		$("#likedCommentsList").fadeIn();
+	});
+})
